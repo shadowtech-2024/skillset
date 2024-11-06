@@ -1,2 +1,2 @@
 # CAPSTONE
--- Skillset from Shadow Tech
+- Skillset from Shadow Tech
