@@ -11,7 +11,7 @@
         $query = mysqli_query($conn,"SELECT * FROM `user` WHERE `user_token`='$userToken';");
         if(mysqli_num_rows($query)>0){
             $rows = mysqli_fetch_array($query);
-            if($rows['role'] !== "Admin"){
+            if($rows['role'] !== "Owner"){
                 header("location: ../");
             }
         }

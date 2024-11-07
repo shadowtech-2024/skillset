@@ -1,3 +1,5 @@
+<?php include("../php/skilled_cookie.php")?>
+
 <!DOCTYPE html>
 <html lang="en">
   
@@ -9,6 +11,9 @@
     <main>
       <!-- Header  -->
       <?php include("../php/header.php")?>
+
+      <!-- Content  -->
+      <?php include("../php/content_home.php")?>
 
       <!-- footer  -->
       <?php include("../php/footer.php")?>

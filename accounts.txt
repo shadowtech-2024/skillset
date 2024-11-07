@@ -1,0 +1,6 @@
+Accounts
+
+Email Password Role
+admin_peso@gmail.com admin_peso12345 Administrator
+skilled@gmail.com skilled12345 Skilled
+homeowner@gmail.com homeowner12345 Owner

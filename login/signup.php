@@ -21,11 +21,11 @@
       </div>
       
 
-      <!-- Signup -->
+      <!-- Login -->
       <div>
 
-        
-        Already have an account. <a href="./index.php">Signup</a>
+      
+        Already have an account. <a href="./index.php">Login</a>
       </div>
     </main>
 
