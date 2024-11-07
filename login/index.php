@@ -21,7 +21,7 @@
           <input type="email" class="form-control form-control-lg" required placeholder="example@gmail.com" name="loginEmail">
         </div>
         <div>
-          <label class="form-label form-label-lg">Passwords</label>
+          <label class="form-label form-label-lg">Password ok kayu</label>
           <input type="password" class="form-control form-control-lg" required placeholder="pass" name="loginPassword">
         </div>
         <br>
