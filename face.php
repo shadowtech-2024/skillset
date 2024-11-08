@@ -8,8 +8,8 @@
     <style>
         #canvas { display: none; }
     </style>
-    <!-- Add Face API.js
-    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.0.1/dist/face-api.min.js"></script> -->
+    <!-- Add Face API.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.0.1/dist/face-api.min.js"></script>
 </head>
 <body>
     <h2>Face Recognition Capture</h2>
