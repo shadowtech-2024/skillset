@@ -24,7 +24,7 @@
         const context = canvas.getContext('2d');
 
         // Load face-api.js models
-        await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
+        await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
 
         // Get access to the webcam
         if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
