@@ -76,7 +76,7 @@
           <div>
             <video id="video" width="200" height="300" autoplay></video>
             <button id="capture">Capture Photo</button>
-            <canvas id="canvas" width="200" height="300"></canvas>
+            <canvas id="canvas" width="200" height="300" class="d-none"></canvas>
           </div>
          </div>
 
