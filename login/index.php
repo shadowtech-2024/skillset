@@ -6,7 +6,7 @@
 
   <body>
     
-    <main class="p-3">
+    <div class="p-3">
       
       <!-- Logo and Title  -->
       <div class="d-flex align-items-center justify-content-center gap-1">
@@ -22,7 +22,7 @@
         </div>
         <div>
           <label class="form-label form-label-lg">Password</label>
-          <input type="password" class="form-control form-control-lg" required placeholder="pass" name="loginPassword">
+          <input type="password" class="form-control form-control-lg" required placeholder="password" name="loginPassword">
         </div>
         <br>
         <div>
@@ -37,7 +37,7 @@
 
       <!-- copyright  -->
       <?php include("../php/copyright.php")?>
-    </main>
+    </div>
 
   </body>
 </html>
