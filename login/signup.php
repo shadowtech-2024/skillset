@@ -78,9 +78,9 @@
          <div>
           <h4>selfie</h4>
           <div>
-            <video id="video" width="640" height="480" autoplay></video>
+            <video id="video" width="200" height="300" autoplay></video>
             <button id="capture">Capture Photo</button>
-            <canvas id="canvas" width="640" height="480" class="d-none"></canvas>
+            <canvas id="canvas" width="200" height="300" class="d-none"></canvas>
           </div>
          </div>
 

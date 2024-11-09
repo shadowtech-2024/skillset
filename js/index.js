@@ -30,7 +30,7 @@ $(document).ready(async function(){
           capture.prop('disabled',true)
 
             // Draw the video frame to the canvas
-            context.drawImage(video, 0, 0, 640, 480);
+            context.drawImage(video, 0, 0, 200, 300);
 
             // Check if a face is detected
             const detection = await faceapi.detectSingleFace(canvas, new faceapi.TinyFaceDetectorOptions());
@@ -52,10 +52,15 @@ $(document).ready(async function(){
                     imgBase64: imageData
                 },
                 success: function (response) {
-                    alert("Image validated successfully. "+response);
+                    alert("Image validated successfully.");
+                    faceCaptured = true;
+                    capture.text('Capture photo')
+          capture.prop('disabled',false)
                 },
                 error: function () {
                     alert("Failed to save the image.");
+                    capture.text('Capture photo')
+          capture.prop('disabled',false)
                 }
             });
         });
