@@ -56,8 +56,8 @@ $(document).ready(async function(){
             faceCaptured = true
             
         },
-        error: function () {
-            alert("Failed to save the image.");
+        error: function (err) {
+            alert("Failed to save the image."+err);
         },
         completed: function(){
           capture.text("Capture Photo")
