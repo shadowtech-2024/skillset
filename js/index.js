@@ -52,7 +52,7 @@ $(document).ready(async function(){
                     imgBase64: imageData
                 },
                 success: function (response) {
-                    alert("Image validated successfully.");
+                    alert("Image validated successfully."+response);
                     faceCaptured = true;
                     capture.text('Capture photo')
           capture.prop('disabled',false)
