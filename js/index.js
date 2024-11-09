@@ -52,7 +52,7 @@ $(document).ready(async function(){
                     imgBase64: imageData
                 },
                 success: function (response) {
-                    alert("Image validated successfully."+response);
+                    alert("Image validated successfully.");
                     faceCaptured = true;
                     capture.text('Capture photo')
           capture.prop('disabled',false)
@@ -70,6 +70,9 @@ $('#signupForm').off('submit').on('submit', function(e){
   e.preventDefault()
   var signupRole = $(this).attr('role')
 
+  if(!faceCaptured)
+    return
+  
   var formData = new FormData(this)
   formData.append('signupRole', signupRole)
   $.ajax({
