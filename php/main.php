@@ -25,7 +25,7 @@
       }
     }
     catch(Exception $e){
-      echo json_encode(["response => ".$e->getMessage()]);
+      echo json_encode(["response" => $e->getMessage()]);
     }
 
 }
