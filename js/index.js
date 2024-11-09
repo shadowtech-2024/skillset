@@ -30,7 +30,7 @@ $(document).ready(async function(){
     capture.prop('disabled',true)
 
     // Draw the video frame to the canvas
-    context.drawImage(video, 0, 0, 200, 300);
+    context.drawImage(video, 0, 0, 640, 480);
 
     // Check if a face is detected
     const detection = await faceapi.detectSingleFace(canvas, new faceapi.TinyFaceDetectorOptions());
