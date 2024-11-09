@@ -26,6 +26,9 @@ $(document).ready(async function(){
   $('#capture').click(async function () {
     var capture = $(this)
 
+    capture.text("Validating...")
+    capture.prop('disabled',true)
+
     // Draw the video frame to the canvas
     context.drawImage(video, 0, 0, 640, 480);
 
@@ -33,11 +36,10 @@ $(document).ready(async function(){
     const detection = await faceapi.detectSingleFace(canvas, new faceapi.TinyFaceDetectorOptions());
     if (!detection) {
         alert("No face detected. Please try again.");
+        capture.text("Capture Photo")
+        capture.prop('disabled',false)
         return; // Exit if no face is found
     }
-
-    capture.text("Validating...")
-    capture.prop('disabled',true)
 
     // Convert canvas to image data URL
     const imageData = canvas.toDataURL('image/png');
