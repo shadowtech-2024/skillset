@@ -57,7 +57,7 @@ $(document).ready(async function(){
             
         },
         error: function (err) {
-            alert("Failed to save the image."+err);
+            alert("Failed to save the image."+err.response);
         },
         completed: function(){
           capture.text("Capture Photo")
