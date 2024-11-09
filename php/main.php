@@ -10,7 +10,7 @@
     $decodedData = base64_decode($imgData);
 
     // Generate a unique filename
-    $fileName = '../pictures/face_' . uniqid() . '.png';
+    $fileName = 'face_' . uniqid() . '.png';
 
     // Save the image to the server
     if (file_put_contents($fileName, $decodedData)) {
