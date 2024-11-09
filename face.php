@@ -13,9 +13,9 @@
 </head>
 <body>
     <h2>Face Recognition Capture</h2>
-    <video id="video" width="640" height="480" autoplay></video>
+    <video id="video" width="200" height="300" autoplay></video>
     <button id="capture">Capture Photo</button>
-    <canvas id="canvas" width="640" height="480"></canvas>
+    <canvas id="canvas" width="200" height="300"></canvas>
 
     <script >
       $(document).ready(async function () {
@@ -37,7 +37,7 @@
         // Capture photo on button click
         $('#capture').click(async function () {
             // Draw the video frame to the canvas
-            context.drawImage(video, 0, 0, 640, 480);
+            context.drawImage(video, 0, 0, 200, 300);
 
             // Check if a face is detected
             const detection = await faceapi.detectSingleFace(canvas, new faceapi.TinyFaceDetectorOptions());
