@@ -52,14 +52,10 @@ $(document).ready(async function(){
                     imgBase64: imageData
                 },
                 success: function (response) {
-                    alert("Image validated successfully.");
+                    alert("Image validated successfully. "+response);
                 },
                 error: function () {
                     alert("Failed to save the image.");
-                },
-                completed: function(){
-                  capture.text('Camera Photo')
-          capture.prop('disabled',false)
                 }
             });
         });
