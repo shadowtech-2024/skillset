@@ -13,6 +13,10 @@
         <div><img src="../images/logo.svg" alt="logo" width="50" height="50"></div>
         <h1 class="mb-0">Skillset</h1>
       </div>
+
+      <div>
+        <button type="button" class="btn-close back"></button>
+      </div>
       
       <!-- Role  -->
       <div class="mt-2 <?php echo isset($_GET['role']) ? "d-none" : "" ?>">
@@ -21,7 +25,7 @@
       </div>
       
       <!-- signup form  -->
-      <form action="" method="post" id="signupForm" role="<?php echo isset($_GET['role']) ? $_GET['role'] : ""?>">
+      <form action="" class="<?php echo isset($_GET['role']) ? "" : "d-none" ?>" method="post" id="signupForm" role="<?php echo isset($_GET['role']) ? $_GET['role'] : ""?>">
 
         <!-- Personal details  -->
         <div>
