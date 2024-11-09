@@ -54,11 +54,14 @@ $(document).ready(async function(){
         success: function (response) {
             alert("Image saved successfully!");
             faceCaptured = true
-            capture.text("Capture Photo")
-    capture.prop('disabled',false)
+            
         },
         error: function () {
             alert("Failed to save the image.");
+        },
+        completed: function(){
+          capture.text("Capture Photo")
+    capture.prop('disabled',false)
         }
     });
 });
